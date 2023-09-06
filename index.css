@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+/* ::-webkit-scrollbar:disabled */
+
+body {
+    background-color: #05161a;
+    /* position: relative; */
+    font-family: 'Lucida Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+    height: 14vh;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 3px rgb(66, 66, 66);
+    padding-bottom: 1vh;
+}
+.menu {
+    width: 30vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.menu ol {
+    padding: 1vh;
+}
+.menu ol a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.menu ol a::before{
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #636363;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+.menu ol a:hover::before{
+width: 100%;
+}
+.hamburger{
+    display: none;
+}
+.home {
+    position: relative;
+    margin-top: 5vh;
+    height: 100%;
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home hr {
+    margin-left: 0vw;
+    box-shadow: 1px 2px 5px rgb(133, 133, 133);
+    width: 35vw;
+}
+.home p{
+    font-size: medium;
+    white-space: pre-line;;
+}
+
+hr {
+    color: white;
+    margin-left: 5vw;
+    width: 90vw;
+    box-shadow: 1px 2px 5px rgb(255, 255, 255);
+}
+
+.ini{
+    padding-left: 2vw;
+    font-family: "Teko";
+    font-size: xx-large;
+}
+.ini a{
+    color: black;
+}
+.ini:hover{
+    transform: scale(1.05)
+}
+.text {
+    padding: 10vh;
+}
+.text h1{
+    transition: 0.5s;
+}
+.text h1:hover {
+    transform: translateX(15px);
+    text-shadow: 2px 2px 3px rgb(71, 71, 71);
+}
+
+.frontimg img {
+    padding-top: 1vh;
+    margin-right: 2vw;
+    height: 81vh;
+    border-bottom-right-radius: 10vh;
+    border-top-left-radius: 10vh;
+    box-shadow: 0px 15px 30px rgb(48, 48, 48);
+    transition: 0.5s;
+}
+.frontimg img:hover{
+    transform: translateX(-10px);
+}
+/* -------------------skills------------------- */
+.skills {
+    /* height: 100vh; */
+    width: 100%;
+    margin-top: 5vh;
+    color: white;
+    background-image: url("pexels-hasan-albari-1229861.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.skills h1 {
+    padding: 5vh 7vw;
+    font-size: 10vh;
+    font-style: oblique;
+}
+.list a{
+    padding: 4px;
+    margin-bottom: 20vh;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    font-size: 1.75rem;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.list{
+    font-weight: 100;
+    margin-top: 7vh;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+#techskill,#softskill{
+    margin-bottom: 10vh;
+}
+.list li{
+    margin-top:0.5em
+}
+
+/* -----------------projects------------------ */
+.projects {
+    color: white;
+    background-color: #161616;
+    /* height: 100vh; */
+    font-family:  Tahoma;
+}
+.projects h1 {
+    padding: 5vh 7vw;
+    font-size: 10vh;
+    font-style: oblique;
+}
+.projectdata{
+    display: flex;
+    justify-content: space-evenly;
+}
+.projectdata ul{
+    
+    margin-left: 3vw;
+}
+.projectdata p{
+    padding-top: 1vh;
+    /* font-weight: 600; */
+    margin-left: 0.5vw;
+    white-space-collapse: preserve-breaks;
+}
+.project1,.project2,.project3{
+    height: 65vh;
+    width: 30vw;
+    margin-bottom: 10vh;
+    color: #ffffff;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0);
+}
+.projects img{
+    border-radius: 10px;
+    width: -webkit-fill-available;
+    height: auto;
+}
+.projects img:hover{
+    /* width: 28vw;
+    height: auto; */
+    transform: scale(0.95);
+    transition: .4s;
+}
+.projects h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 15px rgb(32, 32, 32);
+}
+
+
+/* -----------------------about------------------------- */
+.about {
+    /* height: 50vh; */
+    background-color: #ffffff;
+    display: flex;
+}
+.pfp img{
+    padding: 5vw;
+    width: 35vw;
+    height: auto;
+    border-radius: 20vh;
+    filter: brightness(0.8) contrast(1.25) grayscale(100%);
+    /* webkit-filter: grayscale(90%); */
+}
+.intro h1 {
+    padding: 5vh;
+    font-size: 8vw;
+    font-family: Tahoma;
+    padding-top: 10vh;
+}
+.intro p{
+    font-size: 1.2rem;
+    line-height: 6vh;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+}
+.intro a{
+    padding: 15px;
+    font-size: 1.25rem;
+    background-color: rgba(255, 0, 0, 0.932);
+    border-radius: 10px;
+    color: white;
+
+}
+.intro a:hover{
+    box-shadow: 2px 5px 20px rgb(255, 0, 0);
+    transform: translateX(10px);
+    transition: 0.4s;
+}
+.contact {
+    height: 40vh;
+    /* background-color: darkslategrey; */
+}
+.contact h1{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    color: #ffffff;
+    text-align: center;
+}
+.contact hr{
+    margin-left: 44vw;
+    width: 11vw;
+    box-shadow: none;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+.links svg{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 10vw;
+    height: 12vw;
+}
+.links svg:hover{
+    color: #00ffbf;
+    /* color: white; */
+    transition: 0.4s;
+    filter: invert();
+    box-shadow: 0px 2px 20px #00ffbf;
+    background: linear-gradient(rgb(0,0,0,0),#00ffbf);
+}
+@media screen and (max-width:1000px) {
+    .nav{
+        justify-content: space-around;
+    }
+     .menu{
+       position: absolute;
+       /* left: -100%; */
+       top:14vh;
+       gap: 0;
+       flex-direction: column;
+       /* height: 86vh; */
+       width: 100%;
+       text-align: center;
+       transition: 0.3;
+       background-color: #ffffff;
+    }
+    .hamburger{
+        padding-right: 10vw;
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        border: none;
+    }
+}
+@media screen and (max-width:500px){
+    body {
+        text-align: center;
+        /* background-color: blue; */
+    }
+    .menu{
+        /* display: inline; */
+    }
+    
+    .frontimg{
+        display: none;
+    }
+    .projectdata{
+        display: grid;
+    }
+    .projectdata *{
+        width: 70vw;
+        /* height: 50vh; */
+    }
+    .about{
+        display: grid;
+    }
+    .list{
+        display: grid;
+    }
+}
