@@ -297,6 +297,7 @@ hr {
     }
      .menu{
        position: absolute;
+       display: none;
        /* left: -100%; */
        top:14vh;
        gap: 0;
