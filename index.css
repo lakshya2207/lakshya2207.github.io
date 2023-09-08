@@ -296,6 +296,11 @@ hr {
         display: grid;
         justify-content: space-around;
      }
+     
+     .menu{
+        justify-content: space-evenly;
+        width: 100vh;
+     }
      /*
      .menu{
        position: absolute;
@@ -323,9 +328,9 @@ hr {
         text-align: center;
         /* background-color: blue; */
     }
-    .menu{
+    /* .menu{
         width: auto;
-    }
+    } */
     
     .frontimg{
         display: none;
