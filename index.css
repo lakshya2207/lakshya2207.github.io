@@ -169,7 +169,7 @@ hr {
     color: white;
     background-color: #0b091a;
     /* height: 100vh; */
-    font-family:  Tahoma;
+    /* font-family:  Tahoma; */
 }
 .projects h1 {
     padding: 5vh 7vw;
@@ -178,6 +178,7 @@ hr {
 }
 .projectdata{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .projectdata ul{
@@ -190,7 +191,7 @@ hr {
     margin-left: 0.5vw;
     /* white-space-collapse: preserve-breaks; */
 }
-.project1,.project2,.project3{
+.project1,.project2,.project3,.project4{
     height: 65vh;
     width: 30vw;
     margin-bottom: 10vh;
@@ -294,7 +295,7 @@ hr {
 @media screen and (max-width:1000px) {
     .nav{
         display: grid;
-        justify-content: space-around;
+        /* justify-content: space-around; */
      }
      
      .menu{
