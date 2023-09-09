@@ -80,7 +80,7 @@ width: 100%;
     white-space: pre-line;;
 }
 
-hr {
+hr{
     color: white;
     margin-left: 5vw;
     width: 90vw;
@@ -99,7 +99,7 @@ hr {
     transform: scale(1.05)
 }
 .text {
-    padding: 10vh;
+    padding: 5vh;
 }
 .text h1{
     transition: 0.5s;
@@ -301,6 +301,7 @@ hr {
      .menu{
         justify-content: space-evenly;
         width: 100vw;
+        padding-right: 0;
      }
      /*
      .menu{
@@ -331,8 +332,15 @@ hr {
     }
     /* .menu{
         width: auto;
-    } */
-    
+    } 
+    .home{
+        background-image:url(./img.jpeg);
+        filter: blur(0.5);
+        background-size: cover;
+    }*/
+    .home hr{
+        margin: auto;
+    }
     .frontimg{
         display: none;
     }
