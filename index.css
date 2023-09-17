@@ -23,6 +23,9 @@ body {
     box-shadow: 0px 2px 3px rgb(66, 66, 66);
     padding-bottom: 1vh;
 }
+.hammenu{
+    display: none;
+}
 .menu {
     width: 30vw;
     padding-right: 5vw;
@@ -88,7 +91,7 @@ hr{
 }
 
 .ini{
-    padding-left: 2vw;
+    padding-left: 4vw;
     font-family: "Teko";
     font-size: xx-large;
 }
@@ -127,7 +130,7 @@ hr{
     width: 100%;
     margin-top: 5vh;
     color: white;
-    background-image: url("pexels-hasan-albari-1229861.jpg");
+    background-image: url("./project-image/pexels-hasan-albari-1229861.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -179,6 +182,7 @@ hr{
 .projectdata{
     display: flex;
     flex-wrap: wrap;
+    column-count: 2;
     justify-content: space-evenly;
 }
 .projectdata ul{
@@ -186,12 +190,12 @@ hr{
     margin-left: 3vw;
 }
 .projectdata p{
-    padding-top: 1vh;
+    padding-top: 1.5vh;
     /* font-weight: 600; */
     margin-left: 0.5vw;
     /* white-space-collapse: preserve-breaks; */
 }
-.project1,.project2,.project3,.project4{
+.project1,.project2,.project3,.project4,.project5{
     height: 65vh;
     width: 30vw;
     margin-bottom: 10vh;
@@ -205,6 +209,10 @@ hr{
     width: -webkit-fill-available;
     height: auto;
 }
+/* .linkhover{
+    width: 82vw;
+    height: 40vh;
+} */
 .projects img:hover{
     /* width: 28vw;
     height: auto; */
@@ -213,6 +221,7 @@ hr{
 }
 .projects h2 {
     text-align: center;
+    width: inherit;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 15px rgb(32, 32, 32);
 }
@@ -277,7 +286,7 @@ hr{
     justify-content: space-around;
 }
 .links svg{
-    margin: 20px;
+    /* margin: 20px; */
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -293,29 +302,51 @@ hr{
     background: linear-gradient(rgb(0,0,0,0),#00ffbf);
 }
 @media screen and (max-width:1000px) {
-    .nav{
-        display: grid;
-        /* justify-content: space-around; */
-     }
-     
+   
      .menu{
-        justify-content: space-evenly;
-        width: 100vw;
-        padding-right: 0;
+        display: none;
      }
-     /*
-     .menu{
-       position: absolute;
-       left: -100%; 
+     .hammenu{
+       position: fixed;
+       /* left: -10?0%;  */
        display: none;
-       top:14vh;
-       gap: 0;
+       top:0;
+       z-index: 1;
        flex-direction: column;
-        height: 86vh; 
+       height: 100vh; 
        width: 100%;
        text-align: center;
-       transition: 0.3;
+       transition: .5s;
        background-color: #ffffff;
+    }
+    .hammenu ol{
+        padding-top: 6vh;
+    }
+    .hammenu li{
+        padding: 5vh 20px;
+        transition: .5s;
+    }
+    .hammenu li a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 500;
+    }
+    .hammenu li a::before{
+        content: " ";
+        width: 0;
+        height: 3px;
+        background: #636363;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: .5s;
+    }
+    .hammenu li svg{
+        height: 30px;
+    }
+    .menu li a:hover::before{
+        width: 100%;
     }
     .hamburger{
         padding-right: 10vw;
@@ -323,7 +354,13 @@ hr{
         font-size: 3rem;
         font-weight: 400;
         border: none;
-    } */
+    }
+
+}
+@media screen and (max-width:600px){
+    .frontimg{
+        display: none;
+    }
 }
 @media screen and (max-width:500px){
     body {
@@ -341,18 +378,30 @@ hr{
     .home hr{
         margin: auto;
     }
-    .frontimg{
-        display: none;
-    }
     .projectdata{
         display: grid;
     }
-    .projectdata *{
-        width: 70vw;
+    .projectdata div{
+        width: 82vw;
         /* height: 50vh; */
+    }
+    .project1 span{
+        position: relative;
+        text-align: initial;
+        left: 33px;  
     }
     .about{
         display: grid;
+        font-weight: 400;
+    }
+    .intro h1{
+        padding-top: 3vh;
+    }
+    .intro p{
+        font-size: 1.3rem;
+    }
+    .contact{
+        height: 30vh;
     }
     .list{
         display: grid;
