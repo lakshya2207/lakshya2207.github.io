@@ -309,15 +309,15 @@ hr{
      .hammenu{
        position: fixed;
        /* left: -10?0%;  */
-       display: none;
+       display: block;
        top:0;
        z-index: 1;
        flex-direction: column;
-       height: 100vh; 
-       width: 100%;
+       height: 100%; 
+       width: 0%;
        text-align: center;
        transition: .5s;
-       background-color: #ffffff;
+       background-color:rgb(241, 241, 241);
     }
     .hammenu ol{
         padding-top: 6vh;
@@ -341,9 +341,18 @@ hr{
         left: 0;
         bottom: -6px;
         transition: .5s;
+        z-index: 6;
     }
-    .hammenu li svg{
+    .hammenu svg{
+        font-size: 20px;
+        position: relative;
         height: 30px;
+        left: 36vw;
+        top: 0vh;
+    }
+    .menutext{
+        display: none;
+        transition: 0.5s;
     }
     .menu li a:hover::before{
         width: 100%;
